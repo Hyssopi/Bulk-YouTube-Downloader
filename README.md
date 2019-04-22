@@ -18,7 +18,7 @@ Downloads a list of YouTube links specified by the user.
 
 3. Create/modify the input JSON file:
 
-    * Open `Bulk-YouTube-Downloader/input/Template.xlsx`.
+    * Open `Bulk-YouTube-Downloader/input/Template.xlsx`:
 
     _<img src="images/TemplateSpreadsheet.png" width="500">
 
@@ -26,11 +26,12 @@ Downloads a list of YouTube links specified by the user.
 
     * Copy the resulting output to clipboard, highlighted in **blue**.
 
-    * Open (can also make a copy of the JSON file) `Template.json` in `Bulk-YouTube-Downloader/input/`.
+    * Open (can also make a copy of the JSON file) `Template.json` in `Bulk-YouTube-Downloader/input/`:
 
     _<img src="images/TemplateJSON.png" width="500">
 
-    * Paste contents of clipboard from previous steps into `"downloadList"`, highlighted in **yellow**. Remember to remove the extra `, ` in the beginning of the first line of `"downloadList"` contents.
+    * Paste contents of clipboard from previous steps into `"downloadList"`, highlighted in **yellow**.  
+    Remember to remove the extra `, ` in the beginning of the first line of `"downloadList"` contents.
 
     * (Optional) Change the name of `outputDirectoryPath`, highlighted in **magenta**.
 
@@ -70,8 +71,8 @@ Downloads a list of YouTube links specified by the user.
     "audioOnlyFileFormat": ".mp3",
     "parallelDownloadLimit": 2,
     ```
-    The `videoAudioFileFormat` can use other file formats such as `.flv`.
+    The `videoAudioFileFormat` can use other file formats such as `.mp4`, `.flv`, etc.
     
-    The `audioOnlyFileFormat` uses FFmpeg so can use formats supported by it, such as `.aac`.
+    The `audioOnlyFileFormat` uses FFmpeg so can use formats supported by it, such as `.mp3`, `.aac`.
     
     The `parallelDownloadLimit` specifies the maximum amount of parallel downloads ongoing. Recommended values are 2 to 5.

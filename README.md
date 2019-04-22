@@ -14,7 +14,7 @@ Downloads a list of YouTube links specified by the user.
 
 2. Download this repository as a zip file to your local PC. Then extract contents.
 
-    <img src="images/GitHubRepositoryDownload.png" width="500">
+    <img src="images/GitHubRepositoryDownload.png" width="400">
 
 3. Create/modify the input JSON file:
 
@@ -73,6 +73,6 @@ Downloads a list of YouTube links specified by the user.
     ```
     The `videoAudioFileFormat` can use other file formats such as `.mp4`, `.flv`, etc.
     
-    The `audioOnlyFileFormat` uses FFmpeg so can use formats supported by it, such as `.mp3`, `.aac`.
+    The `audioOnlyFileFormat` uses FFmpeg so can use formats supported by it, such as `.mp3`, `.aac`, etc.
     
     The `parallelDownloadLimit` specifies the maximum amount of parallel downloads ongoing. Recommended values are 2 to 5.

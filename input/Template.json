@@ -1,0 +1,17 @@
+{
+  "videoAudioFileFormat": ".mp4",
+  "audioOnlyFileFormat": ".mp3",
+  "outputDirectoryPath": "OutputFolder",
+  "parallelDownloadLimit": 2,
+  "downloadList":
+  [
+    {"linkTag": "mmCnQDUSO4I", "isAudioOnly": true}
+    , {"linkTag": "_mVW8tgGY_w", "isAudioOnly": true}
+    , {"linkTag": "k1-TrAvp_xs", "isAudioOnly": true}
+    , {"linkTag": "3X9LvC9WkkQ", "isAudioOnly": true}
+    , {"linkTag": "c7O91GDWGPU", "isAudioOnly": true}
+    , {"linkTag": "JSAd3NpDi6Q", "isAudioOnly": true}
+    , {"linkTag": "aYAJopwEYv8", "isAudioOnly": true}
+    , {"linkTag": "sd4VsbM4fOo", "isAudioOnly": true}
+  ]
+}

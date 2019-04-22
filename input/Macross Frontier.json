@@ -1,0 +1,36 @@
+{
+  "videoAudioFileFormat": ".mp4",
+  "audioOnlyFileFormat": ".mp3",
+  "outputDirectoryPath": "Macross Frontier",
+  "parallelDownloadLimit": 2,
+  "downloadList":
+  [
+    {"linkTag": "VnBgMIYA874", "isAudioOnly": false}
+    , {"linkTag": "4Q5FF3ItNv4", "isAudioOnly": false}
+    , {"linkTag": "WhFxGMqSJpk", "isAudioOnly": false}
+    , {"linkTag": "j4aHMM-YMIU", "isAudioOnly": false}
+    , {"linkTag": "xb68Ykmt1KE", "isAudioOnly": false}
+    , {"linkTag": "tac08xuPn6w", "isAudioOnly": false}
+    , {"linkTag": "tYA8BUGSWTU", "isAudioOnly": false}
+    , {"linkTag": "NzVpM4WFG-U", "isAudioOnly": false}
+    , {"linkTag": "ymV7DF_NgAU", "isAudioOnly": false}
+    , {"linkTag": "60vp0UTU0Vo", "isAudioOnly": false}
+    , {"linkTag": "H5gt9103Wsg", "isAudioOnly": false}
+    , {"linkTag": "6rlFxVsul7g", "isAudioOnly": false}
+    , {"linkTag": "NoeGL86crLw", "isAudioOnly": false}
+    , {"linkTag": "JA9VLxuqsW4", "isAudioOnly": false}
+    , {"linkTag": "mXTEcczqDHE", "isAudioOnly": false}
+    , {"linkTag": "zuLvgp8whx4", "isAudioOnly": false}
+    , {"linkTag": "IznVLSzcFLU", "isAudioOnly": false}
+    , {"linkTag": "U3EwAwHhekQ", "isAudioOnly": false}
+    , {"linkTag": "duXAAghjnCk", "isAudioOnly": false}
+    , {"linkTag": "1gsB_Hk-rhE", "isAudioOnly": false}
+    , {"linkTag": "1gQ2j20iAL4", "isAudioOnly": false}
+    , {"linkTag": "MU6T2CBDSy8", "isAudioOnly": false}
+    , {"linkTag": "dRgKfLPuBVE", "isAudioOnly": false}
+    , {"linkTag": "ACIsZyq0Yyg", "isAudioOnly": false}
+    , {"linkTag": "9_b3Yk0FHjY", "isAudioOnly": false}
+    , {"linkTag": "mhLWGdDT9Ck", "isAudioOnly": false}
+    , {"linkTag": "vqnkz5oWkP0", "isAudioOnly": false}
+  ]
+}

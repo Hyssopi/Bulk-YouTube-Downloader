@@ -1,0 +1,17 @@
+{
+  "videoAudioFileFormat": ".mp4",
+  "audioOnlyFileFormat": ".mp3",
+  "outputDirectoryPath": "Umihara Kawase",
+  "parallelDownloadLimit": 3,
+  "downloadList":
+  [
+    {"linkTag": "AysPapCaMyc", "isAudioOnly": true}
+    , {"linkTag": "3Spy1dbRg38", "isAudioOnly": true}
+    , {"linkTag": "U5DLI9muO3w", "isAudioOnly": true}
+    , {"linkTag": "iqQK7SQJXWw", "isAudioOnly": true}
+    , {"linkTag": "JHLwPUGJzKc", "isAudioOnly": true}
+    , {"linkTag": "C8veeOBTPXs", "isAudioOnly": true}
+    , {"linkTag": "urRT4sVu2sw", "isAudioOnly": true}
+    , {"linkTag": "0rb2rOWRnnY", "isAudioOnly": true}
+  ]
+}

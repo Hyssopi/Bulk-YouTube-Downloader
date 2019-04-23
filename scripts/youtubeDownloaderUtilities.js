@@ -28,9 +28,10 @@ youtubeDownloaderUtilities.STATUS = STATUS;
  *
  * @param downloadTaskReference Processed download task reference
  * @param isOutputSpecifiedDirectory Save the progress task HTML to the directory as specified in the download task JSON, if true. Otherwise save the progress task HTML to the main directory.
+ * @param progressTaskHtmlTitle Title of the progress task HTML page
  * @param intervalMilliseconds Interval time in milliseconds
  */
-function initializeDownloading(downloadTaskReference, isOutputSpecifiedDirectory, intervalMilliseconds = 1000)
+function initializeDownloading(downloadTaskReference, isOutputSpecifiedDirectory, progressTaskHtmlTitle, intervalMilliseconds = 1000)
 {
   if (!utilities.isPathExist(downloadTaskReference.outputDirectoryPath))
   {
@@ -73,7 +74,7 @@ function initializeDownloading(downloadTaskReference, isOutputSpecifiedDirectory
       clearInterval(timer);
     }
     
-    let outputProgressHtml = generateProgressHtml(downloadTaskReference.videoAudioFileFormat, downloadTaskReference.audioOnlyFileFormat, downloadTaskReference.downloadList);
+    let outputProgressHtml = generateProgressHtml(progressTaskHtmlTitle, downloadTaskReference.videoAudioFileFormat, downloadTaskReference.audioOnlyFileFormat, downloadTaskReference.downloadList);
     utilities.writeToFile((isOutputSpecifiedDirectory ? downloadTaskReference.outputDirectoryPath : '.') + '/' + 'progress.html', outputProgressHtml);
   }, intervalMilliseconds);
 }
@@ -160,12 +161,13 @@ youtubeDownloaderUtilities.downloadAudioOnly = downloadAudioOnly;
 /**
  * Generate HTML code displaying the progress of the download task.
  *
+ * @param progressTaskHtmlTitle Title of the progress task HTML page
  * @param videoAudioFileFormat Video file format
  * @param audioOnlyFileFormat Audio file format
  * @param downloadList List of items (and related information) to download
  * @return HTML code to display the progress of the download task
  */
-function generateProgressHtml(videoAudioFileFormat, audioOnlyFileFormat, downloadList)
+function generateProgressHtml(progressTaskHtmlTitle, videoAudioFileFormat, audioOnlyFileFormat, downloadList)
 {
   let header = `
     <tr style="border-bottom: 4px solid black;">
@@ -217,7 +219,7 @@ function generateProgressHtml(videoAudioFileFormat, audioOnlyFileFormat, downloa
       <head>
         <meta charset="UTF-8">
         <meta http-equiv="refresh" content="2"/>
-        <title>Bulk YouTube Downloader Progress</title>
+        <title>${progressTaskHtmlTitle}</title>
       </head>
       <style>
         th, td

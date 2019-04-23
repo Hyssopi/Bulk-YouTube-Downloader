@@ -12,7 +12,7 @@ let downloadTaskReference = translateDownloadTask(downloadTask);
 console.info('downloadTaskReference:');
 console.log(downloadTaskReference);
 
-youtubeDownloaderUtilities.initializeDownloading(downloadTaskReference, true);
+youtubeDownloaderUtilities.initializeDownloading(downloadTaskReference, true, 'Bulk YouTube Downloader Progress');
 
 
 /**

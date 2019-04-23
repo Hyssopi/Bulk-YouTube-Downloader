@@ -24,40 +24,6 @@ youtubeDownloaderUtilities.YOUTUBE_URL_PREFIX = YOUTUBE_URL_PREFIX;
 youtubeDownloaderUtilities.STATUS = STATUS;
 
 /**
- * Generate the download task reference from the raw download task data.
- *
- * @param downloadTask Raw download task data
- * @return Download task reference from the raw download task data
- */
-function translateDownloadTask(downloadTask)
-{
-  let downloadTaskReference =
-  {
-    videoAudioFileFormat: downloadTask.videoAudioFileFormat,
-    audioOnlyFileFormat: downloadTask.audioOnlyFileFormat,
-    outputDirectoryPath: downloadTask.outputDirectoryPath,
-    parallelDownloadLimit: downloadTask.parallelDownloadLimit,
-    downloadList: []
-  };
-  
-  for (let i = 0; i < downloadTask.downloadList.length; i++)
-  {
-    let downloadEntry =
-    {
-      linkTag: downloadTask.downloadList[i].linkTag,
-      isAudioOnly: downloadTask.downloadList[i].isAudioOnly,
-      title: '',
-      status: STATUS.PENDING,
-      downloadTimeDuration: ''
-    };
-    downloadTaskReference.downloadList.push(downloadEntry);
-  }
-  
-  return downloadTaskReference;
-}
-youtubeDownloaderUtilities.translateDownloadTask = translateDownloadTask;
-
-/**
  * Start a timed loop that checks whether to start a download entry, checks whether to stop when finished, and generate the progress task HTML.
  *
  * @param downloadTaskReference Processed download task reference
@@ -127,7 +93,7 @@ function downloadVideoAudio(videoAudioFileFormat, outputDirectoryPath, downloadE
   let start = Date.now();
   ytdl.getInfo(YOUTUBE_URL_PREFIX + downloadEntry.linkTag, function(error, info)
   {
-    let title = utilities.getSanitizedFilename(info.title);
+    let title = downloadEntry.title ? downloadEntry.title : utilities.getSanitizedFilename(info.title);
     downloadEntry.title = title;
     ytdl(YOUTUBE_URL_PREFIX + downloadEntry.linkTag)
       .pipe(
@@ -166,7 +132,7 @@ function downloadAudioOnly(audioOnlyFileFormat, outputDirectoryPath, downloadEnt
   let stream = ytdl(YOUTUBE_URL_PREFIX + downloadEntry.linkTag)
     .on('info', (info) =>
     {
-      let title = utilities.getSanitizedFilename(info.title);
+      let title = downloadEntry.title ? downloadEntry.title : utilities.getSanitizedFilename(info.title);
       downloadEntry.title = title;
       if (!utilities.isPathExist(outputDirectoryPath + '/' + title + audioOnlyFileFormat))
       {

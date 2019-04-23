@@ -94,7 +94,7 @@ function downloadVideoAudio(videoAudioFileFormat, outputDirectoryPath, downloadE
   let start = Date.now();
   ytdl.getInfo(YOUTUBE_URL_PREFIX + downloadEntry.linkTag, function(error, info)
   {
-    let title = downloadEntry.title ? downloadEntry.title : utilities.getSanitizedFilename(info.title);
+    let title = utilities.getSanitizedFilename(downloadEntry.title ? downloadEntry.title : info.title);
     downloadEntry.title = title;
     ytdl(YOUTUBE_URL_PREFIX + downloadEntry.linkTag)
       .pipe(
@@ -133,7 +133,7 @@ function downloadAudioOnly(audioOnlyFileFormat, outputDirectoryPath, downloadEnt
   let stream = ytdl(YOUTUBE_URL_PREFIX + downloadEntry.linkTag)
     .on('info', (info) =>
     {
-      let title = downloadEntry.title ? downloadEntry.title : utilities.getSanitizedFilename(info.title);
+      let title = utilities.getSanitizedFilename(downloadEntry.title ? downloadEntry.title : info.title);
       downloadEntry.title = title;
       if (!utilities.isPathExist(outputDirectoryPath + '/' + title + audioOnlyFileFormat))
       {

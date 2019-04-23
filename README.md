@@ -75,4 +75,4 @@ Downloads a list of YouTube links specified by the user.
     
     The `audioOnlyFileFormat` uses FFmpeg so can use formats supported by it, such as `.mp3`, `.aac`, etc.
     
-    The `parallelDownloadLimit` specifies the maximum amount of parallel downloads ongoing. Recommended values are 2 to 5.
+    The `parallelDownloadLimit` specifies the maximum amount of parallel downloads ongoing. Recommended values are 2 to 3.

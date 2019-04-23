@@ -1,7 +1,7 @@
 # Bulk YouTube Downloader
 Downloads a list of YouTube links specified by the user.
 
-<img src="images/DownloadProgress.png" width="1200">
+![DownloadProgress](images/DownloadProgress.png)
 
 ## Prerequisites
 - `Node.js` installed

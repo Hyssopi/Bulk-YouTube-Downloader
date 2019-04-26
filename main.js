@@ -1,7 +1,7 @@
 
 const fs = require('fs');
 
-const youtubeDownloaderUtilities = require('./scripts/youtubeDownloaderUtilities');
+const youtubeDownloaderUtilities = require('./util/youtubeDownloaderUtilities');
 
 
 let downloadTaskJsonPath = JSON.parse(fs.readFileSync('config/configuration.json', 'utf8'));

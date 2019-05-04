@@ -1,18 +1,27 @@
 
-const fs = require('fs');
-
+const utilities = require('./util/utilities');
 const youtubeDownloaderUtilities = require('./util/youtubeDownloaderUtilities');
 
 
-let downloadTaskJsonPath = JSON.parse(fs.readFileSync('config/configuration.json', 'utf8'));
+// Read download task JSON file path input arguments from user
+let downloadTaskJsonPath = process.argv[2];
+console.info('downloadTaskJsonPath: ' + downloadTaskJsonPath);
 
-let downloadTask = JSON.parse(fs.readFileSync(downloadTaskJsonPath, 'utf8'));
-
-let downloadTaskReference = translateDownloadTask(downloadTask);
-console.info('downloadTaskReference:');
-console.log(downloadTaskReference);
-
-youtubeDownloaderUtilities.initializeDownloading(downloadTaskReference, true, 'Bulk YouTube Downloader Progress');
+if (utilities.isPathExist(downloadTaskJsonPath))
+{
+  let downloadTask = utilities.readJsonFile(downloadTaskJsonPath);
+  
+  let downloadTaskReference = translateDownloadTask(downloadTask);
+  console.info('downloadTaskReference:');
+  console.log(downloadTaskReference);
+  
+  youtubeDownloaderUtilities.initializeDownloading(downloadTaskReference, true, 'Bulk YouTube Downloader Progress');
+}
+else
+{
+  console.error('Error: Input download JSON file path does not exist. Use, for example:');
+  console.error('node main.js "input/Template.json"');
+}
 
 
 /**

@@ -30,6 +30,18 @@ function isPathExist(path)
 utilities.isPathExist = isPathExist;
 
 /**
+ * Read JSON file from input path.
+ *
+ * @param path Path of JSON file to read
+ * @return JSON data read from path
+ */
+function readJsonFile(path)
+{
+  return JSON.parse(fs.readFileSync(path, 'utf8'));
+}
+utilities.readJsonFile = readJsonFile;
+
+/**
  * Write text to a file.
  *
  * @param filePath Path and filename of the file to save

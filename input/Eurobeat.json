@@ -1,0 +1,10 @@
+{
+  "videoAudioFileFormat": ".mp4",
+  "audioOnlyFileFormat": ".mp3",
+  "outputDirectoryPath": "Eurobeat",
+  "parallelDownloadLimit": 3,
+  "downloadList":
+  [
+
+  ]
+}

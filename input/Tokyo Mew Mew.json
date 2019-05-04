@@ -1,0 +1,61 @@
+{
+  "videoAudioFileFormat": ".mp4",
+  "audioOnlyFileFormat": ".mp3",
+  "outputDirectoryPath": "Tokyo Mew Mew",
+  "parallelDownloadLimit": 2,
+  "downloadList":
+  [
+    {"linkTag": "GXRqBVkbE7Y", "isAudioOnly": false}
+    , {"linkTag": "DK1hGXyu_Ug", "isAudioOnly": false}
+    , {"linkTag": "Y0agmRmkTxM", "isAudioOnly": false}
+    , {"linkTag": "WBFEKDjzmUU", "isAudioOnly": false}
+    , {"linkTag": "wx2kupASUUg", "isAudioOnly": false}
+    , {"linkTag": "t5V_9FWkigU", "isAudioOnly": false}
+    , {"linkTag": "XPMaauLxB8E", "isAudioOnly": false}
+    , {"linkTag": "SK2eCbHw5SQ", "isAudioOnly": false}
+    , {"linkTag": "1HwxJ6stL2A", "isAudioOnly": false}
+    , {"linkTag": "ogL_ZPor814", "isAudioOnly": false}
+    , {"linkTag": "qn-R4BHwWY0", "isAudioOnly": false}
+    , {"linkTag": "xQC5plZyuR4", "isAudioOnly": false}
+    , {"linkTag": "c-Qz1GCTUBA", "isAudioOnly": false}
+    , {"linkTag": "2WkmU6xohtc", "isAudioOnly": false}
+    , {"linkTag": "kJODLeXWxeg", "isAudioOnly": false}
+    , {"linkTag": "ldwNWRxsp0I", "isAudioOnly": false}
+    , {"linkTag": "cpcpn0a4m8k", "isAudioOnly": false}
+    , {"linkTag": "83T-vH6htbE", "isAudioOnly": false}
+    , {"linkTag": "CDz8RDapuLk", "isAudioOnly": false}
+    , {"linkTag": "y3t2PdDxp-M", "isAudioOnly": false}
+    , {"linkTag": "4HMluth7W2c", "isAudioOnly": false}
+    , {"linkTag": "tIJb111-to0", "isAudioOnly": false}
+    , {"linkTag": "e2mdEc-HOeM", "isAudioOnly": false}
+    , {"linkTag": "aowtQIvJRBs", "isAudioOnly": false}
+    , {"linkTag": "kwPniLgf_PQ", "isAudioOnly": false}
+    , {"linkTag": "ekr56xKIuDE", "isAudioOnly": false}
+    , {"linkTag": "RV1Xm5ozjYk", "isAudioOnly": false}
+    , {"linkTag": "CevU9TKt7gU", "isAudioOnly": false}
+    , {"linkTag": "NjuEwNOQWdg", "isAudioOnly": false}
+    , {"linkTag": "gCBcTRqdEtU", "isAudioOnly": false}
+    , {"linkTag": "exSWjYOd9K4", "isAudioOnly": false}
+    , {"linkTag": "_fdWvRYd-X8", "isAudioOnly": false}
+    , {"linkTag": "D5xbGkpkEFw", "isAudioOnly": false}
+    , {"linkTag": "sBBCVEtYaoA", "isAudioOnly": false}
+    , {"linkTag": "i2eLvjK-M7U", "isAudioOnly": false}
+    , {"linkTag": "14616hvE-Os", "isAudioOnly": false}
+    , {"linkTag": "i05uLhInxrA", "isAudioOnly": false}
+    , {"linkTag": "JPv_bNCM0TE", "isAudioOnly": false}
+    , {"linkTag": "-DgsUX6NWwE", "isAudioOnly": false}
+    , {"linkTag": "iJf7axyMSho", "isAudioOnly": false}
+    , {"linkTag": "qimNtMyaWKY", "isAudioOnly": false}
+    , {"linkTag": "UcXAzDMX6SQ", "isAudioOnly": false}
+    , {"linkTag": "k4cX8qJ9enc", "isAudioOnly": false}
+    , {"linkTag": "kG0jF1boWUA", "isAudioOnly": false}
+    , {"linkTag": "JxwMQf5D994", "isAudioOnly": false}
+    , {"linkTag": "8j0956f4q_A", "isAudioOnly": false}
+    , {"linkTag": "-RAoMWoit7s", "isAudioOnly": false}
+    , {"linkTag": "xvxr3xFM30o", "isAudioOnly": false}
+    , {"linkTag": "3ZSXrgNNvsU", "isAudioOnly": false}
+    , {"linkTag": "aLY8AfvVi9A", "isAudioOnly": false}
+    , {"linkTag": "BmPLwCAybcc", "isAudioOnly": false}
+    , {"linkTag": "Io2HO2o5SdI", "isAudioOnly": false}
+  ]
+}

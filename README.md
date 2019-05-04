@@ -12,11 +12,11 @@ Downloads a list of YouTube links specified by the user.
 ## Run
 1. Install Node.js
 
-2. Download this repository as a zip file to your local PC. Then extract contents.
+2. Download this repository as a zip file to your local PC. Then extract the contents.
 
     <img src="images/GitHubRepositoryDownload.png" width="400">
 
-3. Create/modify the input JSON file:
+3. Create/modify the input JSON file (contains the list of YouTube links to download):
 
     * Open `Bulk-YouTube-Downloader/input/Template.xlsx`:
 
@@ -35,23 +35,13 @@ Downloads a list of YouTube links specified by the user.
 
     * (Optional) Change the name of `outputDirectoryPath`, highlighted in **magenta**.
 
-4. (If you created a new input JSON file) Modify configuration file to link to your input JSON file in:
+4. Open command prompt/terminal.
 
-    `Bulk-YouTube-Downloader/config/configuration.json`
+5. Change directory to your `Bulk-YouTube-Downloader` folder location via `cd`.
 
-    For example:
+6. Run `node main.js "input/Template.json"`. Change "input/Template.json" to the input download JSON file that you want to use.
 
-    ```
-    "input/Umihara Kawase.json"
-    ```
-
-5. Open command prompt/terminal.
-
-6. Change directory to your `Bulk-YouTube-Downloader` folder location via `cd`.
-
-7. Run `node main.js`.
-
-8. To view progress: open `outputDirectoryPath/progress.html` in web browser, where `outputDirectoryPath` is the output folder name as specified in the `Template.json`.
+7. To view progress: open `outputDirectoryPath/progress.html` in web browser, where `outputDirectoryPath` is the output folder name as specified in the `Template.json`.
 
     <img src="images/DownloadProgress.png" width="500">
 

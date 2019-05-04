@@ -39,7 +39,7 @@ Downloads a list of YouTube links specified by the user.
 
 5. Change directory to your `Bulk-YouTube-Downloader` folder location via `cd`.
 
-6. Run `node main.js "input/Template.json"`. Change `"input/Template.json"` to the input download JSON file that you want to use.
+6. Run `node main.js "input/Template.json"`. Change "`input/Template.json`" to the input download JSON file that you want to use.
 
 7. To view progress: open `outputDirectoryPath/progress.html` in web browser, where `outputDirectoryPath` is the output folder name as specified in the `Template.json`.
 
